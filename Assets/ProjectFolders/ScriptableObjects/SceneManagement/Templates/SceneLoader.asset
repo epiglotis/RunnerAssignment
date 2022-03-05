@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cb3b59c61be6da4b82fad36436ebe8d, type: 3}
+  m_Name: SceneLoader
+  m_EditorClassIdentifier: 
+  onLevelFailed: {fileID: 11400000, guid: e32abb8e1ac47094eb3796a1a6f648dc, type: 2}
+  onLevelCompleted: {fileID: 11400000, guid: 095851c34516dd04c846e48528abcbb0, type: 2}
+  elephantLevelCount: {fileID: 11400000, guid: f647779103ea8a343aa6230446a10d99, type: 2}
+  playerLevelCount: {fileID: 11400000, guid: f60dde0c7ba2f75438e9119b41a802b8, type: 2}
