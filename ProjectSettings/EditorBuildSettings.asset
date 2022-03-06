@@ -5,11 +5,26 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Elephant/elephant_scene.unity
-    guid: 47a686e3b898646ae802a7832a649176
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/ProjectFolders/Scenes/InitialScene.unity
     guid: 79ca2f1b4e50a624580c6c4b4cf34ed5
+  - enabled: 1
+    path: Assets/ProjectFolders/Scenes/Workspace.unity
+    guid: 004ab70106cf50a40b555e8e1e5f540b
+  - enabled: 1
+    path: Assets/ProjectFolders/Scenes/Workspace 1.unity
+    guid: 1a9aee4904bb19b4896623e6562ace10
+  - enabled: 1
+    path: Assets/ProjectFolders/Scenes/Workspace 2.unity
+    guid: ebbeb92b9994b0949a988f8652d65006
+  - enabled: 1
+    path: Assets/ProjectFolders/Scenes/Workspace 3.unity
+    guid: 19bc5a64d628e8746a082db24a4d9010
+  - enabled: 1
+    path: Assets/ProjectFolders/Scenes/Workspace 4.unity
+    guid: 8b68d57ef1e88df40868d5cf31c8140f
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: a8ce7571095275b46912c535d85682dc, type: 2}

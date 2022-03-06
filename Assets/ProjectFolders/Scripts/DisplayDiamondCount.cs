@@ -10,10 +10,10 @@ public class DisplayDiamondCount : MonoBehaviour
     [Header("GameVariables")]
     [SerializeField] IntVariable DiamondCount;
 
-    Text diamondCountText;
+    [SerializeField] Text diamondCountText;
 
     private void OnEnable() {
-        
+        diamondCountText.text = DiamondCount.Value.ToString();
         DiamondCountChanged.AddListener(DisplayDiamondCountAsString);
 
     }
@@ -26,7 +26,7 @@ public class DisplayDiamondCount : MonoBehaviour
 
     void DisplayDiamondCountAsString(){
 
-        diamondCountText.text = DiamondCount.ToString();
+        diamondCountText.text = DiamondCount.Value.ToString();
 
     }
 

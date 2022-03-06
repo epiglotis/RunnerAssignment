@@ -9,7 +9,7 @@ public class SceneLoader : GameAsset
     [SerializeField] private VoidEvent onLevelCompleted;
 
     [Header("Variables")]
-    [SerializeField] private IntVariable elephantLevelCount;
+    [SerializeField] private IntVariable willBeLaunchedLevelCount;
     [SerializeField] private IntVariable playerLevelCount;
 
     private void OnEnable() 
@@ -27,9 +27,9 @@ public class SceneLoader : GameAsset
     public void LoadFirstLevel()
     {
         playerLevelCount.SetValue(PlayerPrefs.GetInt("PlayerLevel",1));
-        if(playerLevelCount.Value <= 5) elephantLevelCount.SetValue(playerLevelCount.Value + 1);
-        else elephantLevelCount.SetValue(Random.Range(2,6));
-        SceneManager.LoadSceneAsync(elephantLevelCount.Value, LoadSceneMode.Single);
+        if(playerLevelCount.Value < 5) willBeLaunchedLevelCount.SetValue(playerLevelCount.Value + 1);
+        else willBeLaunchedLevelCount.SetValue(Random.Range(1,5));
+        SceneManager.LoadSceneAsync(willBeLaunchedLevelCount.Value, LoadSceneMode.Single);
     }
 
     private void OnLevelFailed()
@@ -46,10 +46,9 @@ public class SceneLoader : GameAsset
 
     private void LoadNextLevel()
     {
-        elephantLevelCount.Increase(1);
         playerLevelCount.Increase(1);
         PlayerPrefs.SetInt("PlayerLevel",playerLevelCount.Value);
-        SceneManager.LoadSceneAsync(elephantLevelCount.Value, LoadSceneMode.Single);
+        SceneManager.LoadSceneAsync(willBeLaunchedLevelCount.Value, LoadSceneMode.Single);
     }
 
     public void LoadCurrentLevel()
@@ -60,9 +59,9 @@ public class SceneLoader : GameAsset
     private void LoadRandomLevel()
     {
         int value = Random.Range(2,6);
-        elephantLevelCount.SetValue(value);
+        willBeLaunchedLevelCount.SetValue(value);
         playerLevelCount.Increase(1);
         PlayerPrefs.SetInt("PlayerLevel",playerLevelCount.Value);
-        SceneManager.LoadSceneAsync(elephantLevelCount.Value, LoadSceneMode.Single);
+        SceneManager.LoadSceneAsync(willBeLaunchedLevelCount.Value, LoadSceneMode.Single);
     }
 }

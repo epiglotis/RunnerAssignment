@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cb3b59c61be6da4b82fad36436ebe8d, type: 3}
   m_Name: SceneLoader
   m_EditorClassIdentifier: 
+  eventInfo: 
   onLevelFailed: {fileID: 11400000, guid: e32abb8e1ac47094eb3796a1a6f648dc, type: 2}
   onLevelCompleted: {fileID: 11400000, guid: 095851c34516dd04c846e48528abcbb0, type: 2}
-  elephantLevelCount: {fileID: 11400000, guid: f647779103ea8a343aa6230446a10d99, type: 2}
+  willBeLaunchedLevelCount: {fileID: 11400000, guid: 612dcac13b84bd349a138f6f8b410787, type: 2}
   playerLevelCount: {fileID: 11400000, guid: f60dde0c7ba2f75438e9119b41a802b8, type: 2}

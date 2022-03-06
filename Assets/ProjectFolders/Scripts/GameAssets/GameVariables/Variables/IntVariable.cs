@@ -19,12 +19,32 @@ public class IntVariable : GameVariable
 
     private void OnEnable() 
     {
+        SetSavedValue();
+    }
+
+    void SetSavedValue(){
+
         if(!useInitialValue) return;
         savedValue = initialValue;
+
     }
 
     ///<Summary> Initial Value'yu oyun içerisinde değiştirir. </Summary>
-    public void ChangeInitialValue(int amount) => initialValue = (useVariableLimits) ? Mathf.Clamp(amount,minValue,maxValue) : amount;
+    public void ChangeInitialValue(int amount){
+
+        if(useVariableLimits == true){
+
+            initialValue = Mathf.Clamp(amount,minValue,maxValue);
+            SetSavedValue();
+
+        }
+        else{
+
+            initialValue = amount;
+            SetSavedValue();
+
+        }
+    }
 
     ///<Summary> Int ile değer ataması yapılmaktadır.</Summary>
     public void SetValue(int amount) => savedValue = (useVariableLimits) ? Mathf.Clamp(amount,minValue,maxValue) : amount;

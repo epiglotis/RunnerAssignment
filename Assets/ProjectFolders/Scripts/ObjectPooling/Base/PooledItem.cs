@@ -5,7 +5,7 @@ public class PooledItem : MonoBehaviour
     public System.Action<PooledItem> onReturnToPool;
 
     private void OnEnable() {
-        Invoke("ReturnToPool",3f);
+        Invoke("ReturnToPool",1f);
     }
 
     ///<Summary> Bu fonksiyon objeyi poola gönderecek olan eventi raise etmektedir.

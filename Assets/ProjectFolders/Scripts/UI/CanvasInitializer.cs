@@ -6,6 +6,7 @@ public class CanvasInitializer : MonoBehaviour
     [SerializeField] private RectTransform scoreCounter;
     [SerializeField] private RectTransform progresBar;
     [SerializeField] private RectTransform restartButton;
+    [SerializeField] private RectTransform healthCounter;
 
     public void InitializeCanvas()
     {
@@ -13,5 +14,6 @@ public class CanvasInitializer : MonoBehaviour
         scoreCounter.LeanMoveX(5f,0.5f);
         progresBar.LeanScale(Vector3.one,0.5f);
         restartButton.LeanMoveX(-50,0.5f);
+        healthCounter.LeanMoveX(5f,0.5f);
     }
 }

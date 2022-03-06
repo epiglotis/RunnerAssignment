@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 23000012859278624}
   - component: {fileID: 6544361744452190406}
   - component: {fileID: 4098010982099372491}
+  - component: {fileID: 666036736}
   m_Layer: 0
   m_Name: BlueDiamond
   m_TagString: Untagged
@@ -108,4 +109,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ee0c86c199598d4594f3f5bf815b74e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectableCount: {fileID: 11400000, guid: f601a53eccfa5b24da48cc9d9c10151b, type: 2}
+  onScoreGained: {fileID: 11400000, guid: 84fb8fce34fa1a845bd6c40cce5d2a21, type: 2}
+  collectableCount: {fileID: 11400000, guid: 2bae37894bcc0434f9b7cab9b41290cb, type: 2}
+  DiamondWorth: {fileID: 11400000, guid: 8bb2a02f1668e9140ae69106e98c1560, type: 2}
+  diamondType: 0
+  confettiParticle: {fileID: 129898, guid: 36bdc02b23d9ca94d93bd715c0cca5c0, type: 3}
+--- !u!95 &666036736
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013931470818}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3be8ea7fbc9611b47b5952903e411c9f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

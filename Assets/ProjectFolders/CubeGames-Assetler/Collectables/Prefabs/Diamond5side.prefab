@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 4000011756025136}
   - component: {fileID: 33000010953352954}
   - component: {fileID: 23000011085638434}
+  - component: {fileID: 141943531}
+  - component: {fileID: 141943530}
+  - component: {fileID: 141943532}
   m_Layer: 0
   m_Name: Diamond5side
   m_TagString: Untagged
@@ -81,3 +84,52 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &141943531
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013656696560}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.48118803, y: 0.49706, z: 0.48760203}
+  m_Center: {x: -0.0000006556511, y: -0.072876394, z: 0.0000005364418}
+--- !u!114 &141943530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013656696560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ee0c86c199598d4594f3f5bf815b74e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onScoreGained: {fileID: 11400000, guid: 84fb8fce34fa1a845bd6c40cce5d2a21, type: 2}
+  collectableCount: {fileID: 11400000, guid: 2bae37894bcc0434f9b7cab9b41290cb, type: 2}
+  DiamondWorth: {fileID: 11400000, guid: 4a8f669d7aab13c4d9d94d92588cc06e, type: 2}
+  diamondType: 1
+  confettiParticle: {fileID: 129898, guid: 36bdc02b23d9ca94d93bd715c0cca5c0, type: 3}
+--- !u!95 &141943532
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013656696560}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3be8ea7fbc9611b47b5952903e411c9f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

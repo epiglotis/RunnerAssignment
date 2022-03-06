@@ -14,6 +14,7 @@ public class CounterController : MonoBehaviour
 
     [Header("Text Fields")]
     [SerializeField] private Text levelText;
+    [SerializeField] Text levelText2;
     [SerializeField] private Text scoreText;
 
     private float currentScore = 0f;
@@ -24,6 +25,7 @@ public class CounterController : MonoBehaviour
         onScoreGained.AddListener(OnScoreGained);
         onProgressChanged.AddListener(OnProgressChanged);
         levelText.text = "Level " + ((int)playerLevelCounter).ToString();
+        levelText2.text = "Level " + ((int)playerLevelCounter).ToString();
     }
 
     private void OnDisable() 
@@ -34,7 +36,7 @@ public class CounterController : MonoBehaviour
 
     private void OnScoreGained(float score)
     {
-        currentScore += score;
+        currentScore = score;
         scoreText.text = currentScore.ToString();
     }
 

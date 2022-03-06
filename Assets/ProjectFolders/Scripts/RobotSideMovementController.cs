@@ -8,6 +8,7 @@ public class RobotSideMovementController : MonoBehaviour
     [SerializeField] Vector2Event onPointerDrag;
     [Header ("GameVariables")]
     [SerializeField] BoolReference isGameStarted;
+    [SerializeField] BoolReference isGameFinished;
     [Header ("Variables")]
     [SerializeField] float speed = 10;
 
@@ -27,21 +28,10 @@ public class RobotSideMovementController : MonoBehaviour
 
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void SideMovementOnDrag(Vector2 sideMovementDrag){
 
         if(isGameStarted.Value == false) return;
+        if(isGameFinished.Value == true) return;
 
         Vector3 tempPos = transform.localPosition;
         tempPos.x = Mathf.Clamp((tempPos.x + (sideMovementDrag.x)), leftMovementLimit, rightMovementLimit);

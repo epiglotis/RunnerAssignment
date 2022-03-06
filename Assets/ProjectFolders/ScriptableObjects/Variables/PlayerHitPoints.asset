@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: PlayerHitPoints
   m_EditorClassIdentifier: 
   eventInfo: 
-  useInitialValue: 1
+  useInitialValue: 0
   initialValue: 3
-  useVariableLimits: 0
+  useVariableLimits: 1
   minValue: 0
-  maxValue: 0
+  maxValue: 5
