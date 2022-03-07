@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.08988392, g: 0.0730543, b: 0.14573301, a: 1}
+  m_IndirectSpecularColor: {r: 0.089825824, g: 0.07299605, b: 0.14566606, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -239,7 +239,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 69914375}
-  m_LocalRotation: {x: -3.373955e-16, y: 0.9817963, z: -0.1899368, w: -8.558422e-16}
+  m_LocalRotation: {x: 0.000000002830279, y: 0.9817963, z: -0.18993679, w: 0.000000014629906}
   m_LocalPosition: {x: 19.513737, y: -3.391944, z: 14.797379}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -946,7 +946,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 461264, guid: e013b60eb0eec284ba3dce713b6ebf9b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.3900001
+      value: 5.26
       objectReference: {fileID: 0}
     - target: {fileID: 461264, guid: e013b60eb0eec284ba3dce713b6ebf9b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2662,7 +2662,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 461264, guid: e013b60eb0eec284ba3dce713b6ebf9b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.73
+      value: 55.08
       objectReference: {fileID: 0}
     - target: {fileID: 461264, guid: e013b60eb0eec284ba3dce713b6ebf9b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3037,7 +3037,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011756025136, guid: cd34118c604e29141afea74caecd70f2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.58
+      value: 1.62
       objectReference: {fileID: 0}
     - target: {fileID: 4000011756025136, guid: cd34118c604e29141afea74caecd70f2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3045,7 +3045,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011756025136, guid: cd34118c604e29141afea74caecd70f2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 25.88
+      value: 33.24
       objectReference: {fileID: 0}
     - target: {fileID: 4000011756025136, guid: cd34118c604e29141afea74caecd70f2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4679,6 +4679,8 @@ MonoBehaviour:
   onGameFinished: {fileID: 11400000, guid: 1caf86b920a6ce449891a3b81c3923ac, type: 2}
   TotalPlayerHP: {fileID: 11400000, guid: 8a28a7d371ba9e8499953344663e075e, type: 2}
   PlayerHitPoints: {fileID: 11400000, guid: b2ef9ef5d522bb54eadf24f472794943, type: 2}
+  CurrentLevelDiamondCount: {fileID: 0}
+  TotalDiamondCount: {fileID: 0}
   IsGameFinished: {fileID: 11400000, guid: e963b5b497b036f45b9eb7b3eced9f5f, type: 2}
   layerMask:
     serializedVersion: 2

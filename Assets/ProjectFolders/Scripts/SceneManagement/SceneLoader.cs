@@ -27,8 +27,8 @@ public class SceneLoader : GameAsset
     public void LoadFirstLevel()
     {
         playerLevelCount.SetValue(PlayerPrefs.GetInt("PlayerLevel",1));
-        if(playerLevelCount.Value < 5) willBeLaunchedLevelCount.SetValue(playerLevelCount.Value + 1);
-        else willBeLaunchedLevelCount.SetValue(Random.Range(1,5));
+        if(playerLevelCount.Value <= 2) willBeLaunchedLevelCount.SetValue(playerLevelCount.Value + 1);
+        else willBeLaunchedLevelCount.SetValue(Random.Range(1,3));
         SceneManager.LoadSceneAsync(willBeLaunchedLevelCount.Value, LoadSceneMode.Single);
     }
 
@@ -40,7 +40,7 @@ public class SceneLoader : GameAsset
     public void OnLevelCompleted()
     {
 
-        if(playerLevelCount.Value >= 5) LoadRandomLevel();
+        if(playerLevelCount.Value >= 2) LoadRandomLevel();
         else LoadNextLevel();
     }
 
@@ -58,7 +58,7 @@ public class SceneLoader : GameAsset
 
     private void LoadRandomLevel()
     {
-        int value = Random.Range(2,6);
+        int value = Random.Range(1,3);
         willBeLaunchedLevelCount.SetValue(value);
         playerLevelCount.Increase(1);
         PlayerPrefs.SetInt("PlayerLevel",playerLevelCount.Value);

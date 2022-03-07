@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1000013656696560
+--- !u!1 &1000013931470818
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4000011756025136}
-  - component: {fileID: 33000010953352954}
-  - component: {fileID: 23000011085638434}
-  - component: {fileID: 141943531}
-  - component: {fileID: 141943530}
-  - component: {fileID: 141943532}
+  - component: {fileID: 4000012015927304}
+  - component: {fileID: 33000010548150562}
+  - component: {fileID: 23000012859278624}
+  - component: {fileID: 6544361744452190406}
+  - component: {fileID: 4098010982099372491}
+  - component: {fileID: 666036736}
   m_Layer: 0
-  m_Name: Diamond5side
+  m_Name: BlueDiamond
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4000011756025136
+--- !u!4 &4000012015927304
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000013656696560}
+  m_GameObject: {fileID: 1000013931470818}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 6.3499994, y: 5.12, z: -0.17014043}
+  m_LocalPosition: {x: -3.53, y: 4.79, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!33 &33000010953352954
+--- !u!33 &33000010548150562
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000013656696560}
-  m_Mesh: {fileID: 5798395286613469148, guid: 6217dd83a11a7df46b82193c138a8ce2, type: 3}
---- !u!23 &23000011085638434
+  m_GameObject: {fileID: 1000013931470818}
+  m_Mesh: {fileID: 7774008699389378706, guid: 911b2aca4190de843ba6fc029bf3734d, type: 3}
+--- !u!23 &23000012859278624
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000013656696560}
+  m_GameObject: {fileID: 1000013931470818}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 640dc2f025ee433489ca50d9f685de47, type: 2}
+  - {fileID: 2100000, guid: d3fdd53a2b5dd904fad8d824266a4cad, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -84,44 +84,44 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &141943531
+--- !u!65 &6544361744452190406
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000013656696560}
+  m_GameObject: {fileID: 1000013931470818}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.48118803, y: 0.49706, z: 0.48760203}
-  m_Center: {x: -0.0000006556511, y: -0.072876394, z: 0.0000005364418}
---- !u!114 &141943530
+  m_Size: {x: 0.427722, y: 0.64, z: 0.43342394}
+  m_Center: {x: 0, y: 0, z: 0.0000000074505797}
+--- !u!114 &4098010982099372491
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000013656696560}
+  m_GameObject: {fileID: 1000013931470818}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ee0c86c199598d4594f3f5bf815b74e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   onScoreGained: {fileID: 11400000, guid: 84fb8fce34fa1a845bd6c40cce5d2a21, type: 2}
-  collectableCount: {fileID: 11400000, guid: 2bae37894bcc0434f9b7cab9b41290cb, type: 2}
-  DiamondWorth: {fileID: 11400000, guid: 4a8f669d7aab13c4d9d94d92588cc06e, type: 2}
-  diamondType: 1
+  collectableCount: {fileID: 11400000, guid: c279ece0fef229f4dbb5e25150b59cfb, type: 2}
+  DiamondWorth: {fileID: 11400000, guid: 8bb2a02f1668e9140ae69106e98c1560, type: 2}
+  diamondType: 0
   confettiParticle: {fileID: 129898, guid: 36bdc02b23d9ca94d93bd715c0cca5c0, type: 3}
---- !u!95 &141943532
+--- !u!95 &666036736
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000013656696560}
+  m_GameObject: {fileID: 1000013931470818}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 3be8ea7fbc9611b47b5952903e411c9f, type: 2}

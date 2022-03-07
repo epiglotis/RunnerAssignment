@@ -13,6 +13,8 @@ public class RobotBehaviourController : MonoBehaviour
     [Header ("GameVariables")]
     [SerializeField] IntVariable TotalPlayerHP;
     [SerializeField] IntVariable PlayerHitPoints;
+    [SerializeField] IntVariable CurrentLevelDiamondCount;
+    [SerializeField] IntVariable TotalDiamondCount;
     [SerializeField] BoolVariable IsGameFinished;
     [Header ("Variables")]
     [SerializeField] LayerMask layerMask;
@@ -59,6 +61,7 @@ public class RobotBehaviourController : MonoBehaviour
 
             if(PlayerHitPoints.Value <= 0){
                 animator.SetBool("IsDead",true);
+                CurrentLevelDiamondCount.SetValue(0);
                 IsGameFinished.SetValue(true);
                 onIsGameFinishedSuccessfully.Raise(false);
 
@@ -70,6 +73,7 @@ public class RobotBehaviourController : MonoBehaviour
 
             animator.SetTrigger("GameFinished");
             IsGameFinished.SetValue(true);
+            TotalDiamondCount.Increase(CurrentLevelDiamondCount.Value);
             onGameFinished.Raise();
             onIsGameFinishedSuccessfully.Raise(true);
 
