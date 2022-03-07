@@ -74,6 +74,7 @@ public class RobotBehaviourController : MonoBehaviour
             animator.SetTrigger("GameFinished");
             IsGameFinished.SetValue(true);
             TotalDiamondCount.Increase(CurrentLevelDiamondCount.Value);
+            CurrentLevelDiamondCount.SetValue(0);
             onGameFinished.Raise();
             onIsGameFinishedSuccessfully.Raise(true);
 

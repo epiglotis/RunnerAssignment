@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PlayerLevelCount
   m_EditorClassIdentifier: 
   eventInfo: 
-  useInitialValue: 1
+  useInitialValue: 0
   initialValue: 0
   useVariableLimits: 0
   minValue: 0
